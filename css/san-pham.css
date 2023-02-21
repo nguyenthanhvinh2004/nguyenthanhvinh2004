@@ -1,0 +1,566 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* -------------------------------------------------------- */
+header{
+    width: 100%;
+    height: 125px;
+}
+.khung-top{
+    width: 100%;
+    background-color: black;
+    height: 30px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top ul{
+    list-style: none;
+}
+.top li{
+    display: inline-block;
+}
+.top a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 30px;
+    margin-right:20px ;
+}
+.dang-ky a{
+    font-weight: 600;
+}
+.top a:hover{
+    color: yellow;
+}
+
+.search-khung{
+    width: 100%;
+    height: 95px;
+}
+.search{
+    position: relative;
+}
+.search .logo{
+    width: 385px;
+    position: absolute;
+    top: 24px;
+    left: 5px;
+}
+.search .tim-kiem{
+    position: absolute;
+    left: 410px;
+    top: 24px;
+}
+.search input{
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.search button{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search .mua-hang{
+    position: absolute;
+    top: 15px;
+    right: 190px;
+    height: 62px;
+}
+.search .xay-dung{
+    position: absolute;
+    top:15px;
+    height: 62px;
+    right: 20px;
+}
+/* xong phần header */
+/* ------------------------------------------------------------ */
+nav{
+    width: 100%;
+    height: 46px;
+    background-color: #E80104;
+}
+
+.title{
+    line-height: 46px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0 0 5px black;
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+}
+.khung-nav .menu{
+    height: 46px;
+    margin-left: 30px;
+    float: left;
+}
+.khung-nav>.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 25px;
+    line-height: 46px;
+}
+.khung-nav>.menu a:hover{
+    color: yellow;
+}
+.khung-nav>.menu img{
+    height: 46px;
+    float: right;
+}
+/* xong phần nav menu ngang */
+/* ------------------------------------------------------------ */
+.link-top{
+    width: 100%;
+    height: 40px;
+}
+.link-top ol{
+    width: 100%;
+    list-style: none;
+}
+.link-top li{
+    display: inline;
+    line-height: 40px;
+    margin-right: 20px;
+}
+.link-top a{
+    text-decoration: none;
+    color: black;
+}
+.link-top a:hover{
+    color: #007bff;
+}
+/* xong phần link-top */
+/* -------------------------------------------------------------- */
+.san-pham{
+    width: 100%;
+    padding: 15px 0px;
+    margin: 12px 0px;
+}
+.san-pham-left{
+    width: 400px;
+    float: left;
+    padding: 15px 0px;
+    padding-right: 20px;
+}
+.san-pham-left h1{
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: Roboto;
+}
+.tinh-trang{
+    width: 100%;
+    font-size: 12px;
+    height: 37px;
+    margin-bottom: 20px;
+}
+.tinh-trang-1, .tinh-trang-2{
+    margin-right: 10px;
+    float: left;
+}
+.tinh-trang .red{
+    color: red;
+    float: right;
+    font-weight: bold;
+}
+.anh-san-pham{
+    margin: 10px 0px;
+}
+.anh-san-pham .anh-chinh{
+    width: 100%;
+}
+.anh-con{
+    width: 100%;
+    padding: 0px 20px;
+}
+.anh-con .anh-phu{
+    width: 24%;
+}
+.anh-con .anh-phu:hover{
+    box-shadow: 0 0 5px #E80104;
+}
+
+.san-pham-center{
+    width: 500px;
+    padding-right: 20px;
+    float: left;
+}
+.san-pham-center .khung-khuyen-mai{
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.khung-khuyen-mai .khuyen-mai-1{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    display: flex;
+}
+.khuyen-mai-1 .content{
+    width: calc(100% - 160px);
+    color: gray;
+    margin-left: 10px;
+}
+.khung-khuyen-mai .khuyen-mai-2{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    display: flex;
+    color: red;
+}
+.khuyen-mai-2 .content{
+    width: calc(100% - 160px);
+    margin-left: 10px;
+}
+
+.chi-tiet-san-pham{
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.chi-tiet-san-pham ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.chi-tiet-san-pham li{
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.chi-tiet-san-pham .xem-them>a {
+    text-decoration: none;
+    color: #E80104;
+}
+.chi-tiet-san-pham .bao-hanh{
+    font-size: 16px;
+}
+
+.them-mua{
+    height: 50px;
+    width: 100%;
+}
+.khung-mua-ban .mua{
+    width: 235px;
+    background-color: #E80104;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 5px;
+    float: left;
+    border: 1px solid #e80104;
+}
+.khung-mua-ban .mua-ngay{
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+}
+.khung-mua-ban .giao-hang{
+    font-size: 13px;
+    width: 100%;
+    color: white;
+    font-weight: 400;
+}
+
+.khung-mua-ban .them{
+    width: 235px;
+    background-color: white;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 5px;
+    float: right;
+    border: 1px solid #e80104;
+}
+.khung-mua-ban .cho-vao-gio{
+    font-size: 16px;
+    width: 100%;
+    color: #e80104;
+    font-weight: bolder;
+}
+.khung-mua-ban .chon-tiep{
+    font-size: 13px;
+    width: 100%;
+    color: #e80104;
+    font-weight: 400;
+}
+
+.khung-mua-ban .tra-gop{
+    width: 100%;
+    background-color: #F9A421;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 5px;
+    clear: both;
+    margin-top: 10px;
+}
+.khung-mua-ban .mua-tra-gop{
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+}
+.khung-mua-ban .tra-truoc{
+    font-size: 13px;
+    width: 100%;
+    color: white;
+    font-weight: 400;
+}
+
+
+
+
+
+.san-pham-right{
+    float: left;
+    width: 280px;
+}
+.san-pham-right .boc{
+    border: 1px solid #e1e1e1;
+}
+.san-pham-right .cs{
+    padding: 10px;
+}
+.san-pham-right .tu-van{
+    width: 100%;
+    text-align: center;
+    line-height: 36px;
+    height: 36px;
+    background-color: #e80104;
+    color: white;
+}
+.san-pham-right .chi-nhanh{
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.san-pham-right .cs>ul{
+    list-style: none;
+}
+.san-pham-right .cs>ul>li{
+    margin-bottom: 5px;
+    height: 21px;
+    margin-left: 10px;
+}
+.san-pham-right .cs>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.san-pham-right .csgh{
+    margin-top: 20px;
+    border: 1px solid #e1e1e1;
+}
+.san-pham-right .time{
+    padding: 10px;
+    font-size: 14px;
+}
+/* xong phần báo giá */
+/* ------------------------------------------------------------- */
+.vien{
+    width: 100%;
+    height: 10px;
+    background-color: #F5F5F5;
+    clear: both;
+    margin: 15px 0px;
+}
+/* ------------------------------------------------------------- */
+.menu-thong-so{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.menu-thong-so ul{
+    list-style: none;
+    line-height: 38.5px;
+}
+.menu-thong-so li{
+    display: inline;
+    background-color: #F5F5F5;
+    border: 1px solid #ddd;
+    padding: 10px 10px;
+}
+.menu-thong-so a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.menu-thong-so .dac-biet{
+    background-color: white;
+    color: #E80104;
+    border-top: 2px solid #d00;
+}
+
+.khung-thong-so h2{
+    margin: 20px 0;
+    padding-bottom: 3px;
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+tr{
+    height: 0.25in;
+}
+td{
+    padding: 6px 10px;
+}
+table .cot-1{
+    text-align: right;
+    width: 157px;
+}
+/* xong phần thông số kỹ thuật */
+/* ----------------------------------------------------------- */
+.chung-ne h2{
+    margin: 20px 0;
+    padding-bottom: 3px;
+    font-size: 21px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+
+
+
+/* -------------------------------------------------------------- */
+.khung-ho-tro{
+    height: 82px;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px 0px;
+    clear: both;
+    margin-top: 15px;
+}
+.khung-ho-tro ul li{
+    list-style: none;
+    float: left;
+    width: 25%;
+}
+.khung-ho-tro img{
+    max-width: 100%;
+    height: auto;
+}
+.khung-ho-tro li .img{
+    width: 40px;
+    float: left;
+    margin-right: 8px;
+}
+.khung-ho-tro .ct1{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+/* xong phần hỗ trợ */
+/* ----------------------------------------------------------- */
+.thong-tin{
+    width: 100%;
+    height: 262px;
+    padding: 20px 0px;
+    clear: both;
+}
+.thong-tin .chung{
+    width: 25%;
+    float: left;
+}
+.thong-tin .name{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.thong-tin ul{
+    list-style: none;
+}
+.thong-tin li{
+    margin-bottom: 10px;
+}
+.thong-tin a{
+    text-decoration: none;
+    color: black;
+}
+.gioi-thieu-chung .icon-fb-yt-ins{
+    float: left;
+    margin: 20px 20px;
+}
+.icon-fb-yt-ins img{
+    width: 28px;
+    margin-right: 10px;
+}
+.hinh-thuc-thanh-toan .icon-tt-tb{
+    margin: 20px 10px;
+}
+.icon-tt-tb .tt{
+    width: 210px;
+    margin-bottom: 30px;
+}
+.icon-tt-tb .tb{
+    width: 138px;
+}
+/* xong phần thông tin */
+/* --------------------------------------------------------------- */
+.Showroom{
+    width: 100%;
+    height: 350px;
+    background-color: #f52031;
+    padding: 20px 0px;
+}
+.co-so{
+    width: 25%;
+    float: left;
+    height: 253px;
+}
+.co-so .ten-co-so{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.co-so ul{
+    list-style: none;
+}
+.co-so li{
+    font-size: 13px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.co-so a{
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+.co-so .dia-chi{
+    font-size: 13px;
+    font-weight: bolder;
+}
+.ban-quyen{
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+    line-height: 20px;
+}
+/* xong phần .Showroom */
+/* ----------------------------------------------------------- */
+footer{
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
